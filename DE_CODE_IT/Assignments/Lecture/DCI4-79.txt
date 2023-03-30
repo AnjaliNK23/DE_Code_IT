@@ -1,0 +1,15 @@
+
+C.R.U.D. Operations
+
+Questions:
+1.)Name two keywords that fall under the CREATE in C.R.U.D.
+A:)CREATE ,INSERT INTO and ALTER  are the keywords for ceate in C.R.U.D.
+ 
+2.)What is the main keyword used for the READ in C.R.U.D. ?
+A:)SELECT is the main keyword for read in C.R.U.D.
+
+3.)What keyword updates rows in a table?
+A:)UPDATE is the keyword used to update rows in a table.
+
+4)What keyword (or keywords) delete data in a database?
+A:)DROP and DELETE keywords will delete the data like table,rows in DB.

@@ -1,0 +1,32 @@
+
+Relational Database Management Systems:
+1.	How is data stored in a relational database model?
+A:	Relational database model stores data in a Table.
+
+2.	Define what a Table is?
+A:	Table is the most simplest form of data storage.This table is a collection of related data entries and it consists 
+	of numerous columns and rows.A table is also considered as a convenient representation of relations. 
+
+3.	What is a Record?
+A:	A record is a collection of fields that contain data about a given entity.It can store as a row in a table.A record contains a smallest amount of data
+	which can be inserted,updated and deleted.
+ 
+4.	What direction does data flow in a column?
+A:	The data flow from  Up to Down  in a column.
+
+5.	What is a Schema?
+	Schema is a logical representation of database.It defines how data is organised within a relational database.
+	This is inclusive of logical constraints such as tablenames,fields,datatypes and relationship between these entities.
+	
+
+6.	What purpose do Keys serve in a table?
+	Fields that are part of a table relationship are called keys. A key usually consists of one field, but may consist of more than one field. 
+	There are two kinds of keys:Primary key and Foreign key 
+	a)Primary key :-  A table can have only one primary key. A primary key consists of one or more fields that uniquely identify each record that you store in the 
+	table. Often, there is a unique identification number, such as an ID number, a serial number, or a code, that serves as a primary key. 
+	For example, you might have a Customers table where each customer has a unique customer ID number. The customer ID field is the primary key of the Customers 
+	table. When a primary key contains more than one field, it is usually composed of pre-existing fields that, taken together, provide unique values.
+	For example, you might use a combination of last name, first name, and birth date as the primary key for a table about people. 
+	b)Foreign key:-   A table can also have one or more foreign keys. A foreign key contains values that correspond to values in the primary key of another table.
+	 For example, you might have an Orders table in which each order has a customer ID number that corresponds to a record in a Customers table. The customer ID 
+	 field is a foreign key of the Orders table.

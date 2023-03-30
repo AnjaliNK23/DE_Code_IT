@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "61368302-a581-4b37-8076-34d2b717f16e",
+		"name": "DECodeItApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14952747"
+	},
+	"item": [
+		{
+			"name": "GET (SELECT)",
+			"item": [
+				{
+					"name": "GetCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/GetCustomers",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"GetCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSpecificCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/GetCustomer?firstName=Amitabh&lastName=Bacchan",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"GetCustomer"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Amitabh"
+								},
+								{
+									"key": "lastName",
+									"value": "Bacchan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetQuestions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/GetQuestions",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"GetQuestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSurvey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/GetSurvey?firstName=Joe&lastName=Biden",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"GetSurvey"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Joe"
+								},
+								{
+									"key": "lastName",
+									"value": "Biden"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT (INSERT)",
+			"item": [
+				{
+					"name": "InsertNewCustomer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": 0,\r\n  \"firstName\": \"James\",\r\n  \"lastName\": \"Brown\",\r\n  \"address\": \"123 Mans World Blvd\",\r\n  \"city\": \"Omaha\",\r\n  \"state\": \"NE\",\r\n  \"zipcode\": \"68101\",\r\n  \"email\": \"mansworld@world.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{MasterUrl}}/InsertNewCustomer",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"InsertNewCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertQuestion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"questionID\": 0,\r\n  \"questionText\": \"What did you learn in class?\",\r\n  \"isActive\": true,\r\n  \"questionAddedDate\": \"2023-03-27T02:40:59.532Z\",\r\n  \"addedBy\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{MasterUrl}}/InsertQuestion",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"InsertQuestion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertNewSurvey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{MasterUrl}}/InsertNewSurvey?firstName=David&lastName=Pollock&address=123 CB Highway&city=Omaha&state=NE&zip=68142&Q1=9&a1=African-American&Q2=6&a2=Yes, FS Software Engineer&Q3=8&a3=Douglas&email=alex.d.horton95@gmail.com",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"InsertNewSurvey"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "David"
+								},
+								{
+									"key": "lastName",
+									"value": "Pollock"
+								},
+								{
+									"key": "address",
+									"value": "123 CB Highway"
+								},
+								{
+									"key": "city",
+									"value": "Omaha"
+								},
+								{
+									"key": "state",
+									"value": "NE"
+								},
+								{
+									"key": "zip",
+									"value": "68142"
+								},
+								{
+									"key": "Q1",
+									"value": "9"
+								},
+								{
+									"key": "a1",
+									"value": "African-American"
+								},
+								{
+									"key": "Q2",
+									"value": "6"
+								},
+								{
+									"key": "a2",
+									"value": "Yes, FS Software Engineer"
+								},
+								{
+									"key": "Q3",
+									"value": "8"
+								},
+								{
+									"key": "a3",
+									"value": "Douglas"
+								},
+								{
+									"key": "email",
+									"value": "alex.d.horton95@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST (UPDATE)",
+			"item": [
+				{
+					"name": "UpdateCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": 0,\r\n  \"firstName\": \"Joe\",\r\n  \"lastName\": \"Biden\",\r\n  \"address\": \"1600 Pennsylvania Ave\",\r\n  \"city\": \"Washington\",\r\n  \"state\": \"DC\",\r\n  \"zipcode\": \"20500\",\r\n  \"email\": \"president@whitehouse.gov\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{MasterUrl}}/UpdateCustomer",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"UpdateCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSurvey",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": 0,\r\n  \"firstName\": \"Joe\",\r\n  \"lastName\": \"Biden\",\r\n  \"address\": \"1600 Pennsylvania Ave\",\r\n  \"city\": \"Washington\",\r\n  \"state\": \"DC\",\r\n  \"zipcode\": \"20500\",\r\n  \"email\": \"president@whitehouse.gov\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{MasterUrl}}/UpdateSurvey?firstName=Joe&lastName=Biden&isInterested=false",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"UpdateSurvey"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Joe"
+								},
+								{
+									"key": "lastName",
+									"value": "Biden"
+								},
+								{
+									"key": "isInterested",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE (DELETE)",
+			"item": [
+				{
+					"name": "DeleteCustomer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/DeleteCustomer?firstName=James&lastName=Brown",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"DeleteCustomer"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "James"
+								},
+								{
+									"key": "lastName",
+									"value": "Brown"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSurvey",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{MasterUrl}}/DeleteSurvey?firstName=Michael&lastName=Jackson",
+							"host": [
+								"{{MasterUrl}}"
+							],
+							"path": [
+								"DeleteSurvey"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Michael"
+								},
+								{
+									"key": "lastName",
+									"value": "Jackson"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "MasterUrl",
+			"value": "http://localhost:5046/apis/CodeBlack"
+		}
+	]
+}

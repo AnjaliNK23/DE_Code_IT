@@ -1,0 +1,31 @@
+Creating Databases 
+1.	What three advantages do databases have over text files or spreadsheets?
+A:-	The three main advantages are  Access,Integrity ans security.
+
+2.	What are at least two benefits of utilizing a database?
+A:-	a)Improve data security and data sharing.
+	b)Effective Data integration.
+	c)consistent,reliable data.
+	d)Data that complies with privacy regulations.
+	e)Increased productivity.
+	f)Better decision making.
+
+3.	What are the 4 system databases?
+A:	System Databases consists of Master,MSdatabase,Tempdatabase and Model.
+	These databases will maintain and provide information about sql server system  like logins,databses,linked servers,
+	jobs,reports,report data sources etc.,
+
+4.	What is the purpose of the master database in SQL Server?
+A:	Master databse is the primary configuration database in SQL server.It contains all the information of databases that
+	exists on the server ,including the physical database files and their location.The master databse also contains SQL 
+	configuration nad login Account information.
+	
+5.	Which of the system databases act as a template for new databases?
+	The Model databse is used as an template for user defined databses are created.It contains the subset of all system 
+	tables of the master database,which every user defineddatbase needs.
+
+6.	The MSDB database?  d- all the above is answer.
+	a.	Stores information for SQL Server Agent Database
+	b.	Stores information for backups and restores that are executed
+	c.	Stores information for Service Broker and Database Mail
+	d.	All the above
